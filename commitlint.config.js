@@ -10,6 +10,7 @@
 // slicing; A code change that only changes the UI
 // integration: Integration with API
 // setup: Setup/installation changes
+// cleanup: delete files
 
 module.exports = {
   extends: ['@commitlint/config-conventional'],
@@ -100,6 +101,11 @@ module.exports = {
             description: 'Integration with API',
             title: 'API Integrations',
             emoji: '💍',
+          },
+          cleanup: {
+            description: 'Clean up files',
+            title: 'Delete files',
+            emoji: '🗑',
           },
         },
       },
