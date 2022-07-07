@@ -15,8 +15,8 @@
     "format": "prettier --write .",
     "lint": "eslint './**/*.{ts,tsx}' --max-warnings 0",
     "lint:ts": "tsc --noemit",
-    "lint:css": "stylelint **/*.{scss,css}",
-    "lint:css:fix": "stylelint --fix **/*.{scss,css}"
+    "lint:css": "stylelint **/*.{scss,css} --custom-syntax",
+    "lint:css:fix": "stylelint --fix **/*.{scss,css} --custom-syntax"
   },
   "dependencies": {
     "next": "12.1.6",
