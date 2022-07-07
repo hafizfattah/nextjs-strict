@@ -15,8 +15,8 @@
     "format": "prettier --write .",
     "lint": "eslint './**/*.{ts,tsx}' --max-warnings 0",
     "lint:ts": "tsc --noemit",
-    "lint:css": "stylelint **/*.{scss,css} --custom-syntax",
-    "lint:css:fix": "stylelint --fix **/*.{scss,css} --custom-syntax"
+    "lint:css": "stylelint **/*.{scss,css} --custom-syntax postcss-scss",
+    "lint:css:fix": "stylelint --fix **/*.{scss,css} --custom-syntax postcss-scss"
   },
   "dependencies": {
     "next": "12.1.6",
@@ -36,6 +36,7 @@
     "eslint-config-next": "12.1.6",
     "husky": "^8.0.1",
     "postcss": "^8.4.14",
+    "postcss-scss": "^4.0.4",
     "prettier": "^2.7.1",
     "stylelint": "^14.9.1",
     "stylelint-checkstyle-formatter": "^0.1.2",
