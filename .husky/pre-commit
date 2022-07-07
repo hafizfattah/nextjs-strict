@@ -3,4 +3,7 @@
 
 yarn format
 yarn lint
-yarn check-types
+yarn lint:ts
+yarn lint:css
+yarn lint:css:fix
+
