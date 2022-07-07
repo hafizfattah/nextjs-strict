@@ -8,12 +8,13 @@
     "npm": "please use yarn"
   },
   "scripts": {
+    "prepare": "husky install",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "prepare": "husky install",
-    "format": "prettier --write ."
+    "lint": "eslint './**/*.{ts,tsx}' --max-warnings 0",
+    "format": "prettier --write .",
+    "check-types": "tsc --noemit"
   },
   "dependencies": {
     "next": "12.1.6",
